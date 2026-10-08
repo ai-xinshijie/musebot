@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — JSON Lens</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+           max-width: 720px; margin: 48px auto; padding: 0 20px; line-height: 1.65; color: #1f2328; }
+    h1 { font-size: 26px; } h2 { font-size: 18px; margin-top: 32px; }
+    code { background: #f4f5f7; padding: 2px 6px; border-radius: 4px; font-size: 13px; }
+    .updated { color: #6e7781; font-size: 13px; }
+    li { margin-bottom: 8px; }
+  </style>
+</head>
+<body>
+  <h1>Privacy Policy — JSON Lens</h1>
+  <p class="updated">Last updated: October 8, 2026</p>
+
+  <h2>The short version</h2>
+  <p>
+    JSON Lens <strong>does not collect, upload, store remotely, share, or sell
+    any of your data</strong>. Everything you paste or open in the extension is
+    processed locally inside your browser tab and never leaves your device.
+    There is no account, no analytics, no advertising, and no tracking of any kind.
+  </p>
+
+  <h2>What the extension does with your data</h2>
+  <ul>
+    <li>All JSON parsing, formatting, validation, tree rendering, searching, and
+        copying happens in the tab's own JavaScript engine, on your device.</li>
+    <li>The extension makes <strong>zero network requests</strong>: no
+        <code>fetch</code>, no <code>XMLHttpRequest</code>, no WebSocket, no
+        beacons, no external scripts, images, or fonts.</li>
+    <li>Your input is remembered between sessions using
+        <code>chrome.storage.local</code> — storage that lives on your device
+        only and is never synced or transmitted.</li>
+  </ul>
+
+  <h2>Permissions and why each is needed</h2>
+  <p>The extension requests the minimum permissions required to function:</p>
+  <ul>
+    <li><code>clipboardRead</code> — reads your clipboard <strong>only when you
+        press the Paste button</strong>. Nothing is read automatically.</li>
+    <li><code>storage</code> — saves your last input on this device so a page
+        refresh doesn't lose your work. On-device only.</li>
+  </ul>
+  <p>
+    The extension requests <strong>no</strong> <code>host_permissions</code>,
+    uses no content scripts, and loads no remote code — so there is physically
+    nowhere for your data to be sent.
+  </p>
+
+  <h2>Third parties</h2>
+  <p>
+    None. No data is shared with, sold to, or processed by any third party,
+    because no data ever leaves your device.
+  </p>
+
+  <h2>Children</h2>
+  <p>
+    The extension does not knowingly collect any information from anyone,
+    including children under 13.
+  </p>
+
+  <h2>Changes to this policy</h2>
+  <p>
+    If a future version ever needs network access for a new feature, this
+    policy will be updated <em>before</em> that version is published, the new
+    permission will be disclosed in the Chrome Web Store listing, and the
+    feature will ask for your consent first. The current version's zero-network
+    guarantee stands as written above.
+  </p>
+
+  <h2>Contact</h2>
+  <p>
+    Questions about this policy: open an issue on the project's GitHub
+    repository (link in the Chrome Web Store listing).
+  </p>
+</body>
+</html>
